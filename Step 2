@@ -1,0 +1,29 @@
+Step 2
+ 
+// P06 Vowel Movement 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+ 
+#include <iostream>
+#include <string>
+#include <cstring>
+ 
+using namespace std;
+ 
+int main()
+{
+   string mySentence;
+ 
+   cout << "Type a short sentence and we'll have a vowel movement.\n";
+   getline (cin,mySentence);
+   cout << "\n" << mySentence << "\n";
+ 
+   char* playerSentence = (char*)mySentence.c_str();
+   char* replacedSentence = new char[strlen(playerSentence)];
+ 
+   cout << "Your sentence length is  " << strlen(playerSentence) << "\n";
+ // Add the “for” loop here!
+ 
+   replacedSentence[strlen(playerSentence)] = '\0';
+   cout << "\n" << replacedSentence;
+   return 0;
+}
+ 
